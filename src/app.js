@@ -1,4 +1,3 @@
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
@@ -9,10 +8,11 @@ window.onload = function() {
   document.querySelector("#EXCUSA").innerHTML = generarexcusa();
 };
 function generarexcusa() {
-  let pronombre = ["un", "el"];
+  let pronombre = ["Un", "El"];
   let sujeto = ["perro", "gato", "vecino", "profesor"];
   let verbo = ["comio", "destruyo", "mordio"];
   let objeto = ["mi tarea", "mi proyecto", "mi lectura"];
+
   let indicePronombre = Math.floor(Math.random() * pronombre.length);
   let indiceSujeto = Math.floor(Math.random() * sujeto.length);
   let indiceVerbo = Math.floor(Math.random() * verbo.length);
